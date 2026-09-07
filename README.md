@@ -83,6 +83,8 @@
 ---
 
 ## 项目结构
+
+```text
 D:\实习项目\
 │
 ├── data/
@@ -102,9 +104,7 @@ D:\实习项目\
 │   └── 淘宝用户.pbix              # Power BI 看板文件
 │
 └── README.md                     # 项目说明文档
-
+```
 ## 看板预览
-images/taobao.png
 
-
-
+![淘宝用户行为分析看板](images/taobao.png)
