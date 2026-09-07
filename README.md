@@ -88,14 +88,14 @@
 D:\实习项目\
 │
 ├── data/
-│   └── UserBehavior.csv          # 原始数据（已忽略，不上传）
+│   └── UserBehavior.csv          # 原始数据
 │
 ├── scripts/
 │   ├── 01_data_clean.py          # 数据清洗脚本
 │   └── 02_data_import.py         # MySQL 导入脚本
 │
 ├── output/
-│   └── user_behavior_cleaned.csv # 清洗后数据（已忽略，不上传）
+│   └── user_behavior_cleaned.csv # 清洗后数据
 │
 ├── images/
 │   └── dashboard.png             # Power BI 看板截图
