@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# 数据文件（太大，不上传）
+data/
+output/
+*.csv
+
+# 敏感信息
+*.env
