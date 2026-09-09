@@ -186,7 +186,7 @@ kaggle 淘宝用户行为公开数据集
 ## 7. 项目结构
 
 ```text
-taobao-analysis/
+实习项目/
 │
 ├── data/                         # 原始数据及分析结果
 │   ├── UserBehavior.csv          # 淘宝用户行为原始数据
