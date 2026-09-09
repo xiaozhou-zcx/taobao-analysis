@@ -2,23 +2,32 @@
 
 ## 1. 项目介绍
 
-本项目基于淘宝用户行为公开数据集，通过 MySQL 对用户浏览、收藏、加购、购买等行为进行分析，并结合 Excel 与 Power BI 完成数据可视化展示。
-项目主要围绕用户行为漏斗分析以及高频购买用户分析，探索用户从浏览商品到完成购买过程中的转化情况，并挖掘潜在高价值用户，为电商运营优化提供数据参考。
+本项目基于淘宝用户行为公开数据集，通过 Python 完成数据清洗与预处理，并使用 MySQL 对用户浏览、收藏、加购、购买等行为进行分析。
+
+项目主要围绕两个方向展开：
+
+- **用户行为漏斗分析**：分析用户从浏览商品到最终购买的转化情况，定位用户流失较严重的环节。
+- **高频购买用户分析**：统计用户购买次数，识别高频购买用户，为用户运营和精细化营销提供数据参考。
+
+同时使用 Excel 和 Power BI 对分析结果进行可视化展示。
+
 ---
 
-# 2. 项目背景
+## 2. 项目背景
 
 在电商平台中，用户通常会经历：
-浏览商品 → 收藏商品 → 加入购物车 → 完成购买
-通过分析不同阶段用户数量变化，可以了解用户流失情况，定位影响购买转化的关键环节。
-同时，通过分析用户购买频次，可以识别高价值用户群体，为后续用户运营提供支持。
----
+
+**浏览 → 收藏 / 加购 → 购买**
+
+通过分析不同用户行为阶段的数量变化，可以了解用户在购买过程中的流失情况，并定位影响最终购买转化的关键环节。
+
+此外，通过分析用户购买次数，可以进一步识别高频购买用户，为后续用户运营提供数据支持。
 
 # 3. 数据说明
 
 ## 数据来源
 
-淘宝用户行为公开数据集
+kaggle 淘宝用户行为公开数据集
 
 
 ## 数据表
@@ -175,34 +184,36 @@
 ---
 
 # 7. 项目结构
-实习项目
+实习项目/
 │
-├── data/ # 原始数据及分析结果
-│ ├── UserBehavior.csv # 淘宝用户行为原始数据
-│ ├── behavior_funnel.csv # 用户行为漏斗分析结果
-│ └── top_buy_users.csv # 高购买用户分析结果
+├── data/
+│   ├── UserBehavior.csv
+│   ├── behavior_funnel.csv
+│   └── top_buy_users.csv
 │
-├── output/ # 数据清洗后的文件
-│ └── user_behavior_cleaned.csv
+├── output/
+│   └── user_behavior_cleaned.csv
 │
-├── images/ # 项目展示图片
-│ ├── taobao.png # Power BI 用户行为看板
-│ ├── funnel.png # 用户行为漏斗图
-│ ├── top_user.png # Top购买用户分析图
+├── images/
+│   ├── taobao.png
+│   ├── funnel.png
+│   └── top_user.png
 │
 ├── powerBI/
-│ └── 淘宝用户.pbix # Power BI分析文件
+│   └── 淘宝用户.pbix
 │
-├── scripts/ # 数据处理脚本
-│ ├── 01_data_clean.py # 数据清洗
-│ ├── 02_data_import.py # 数据导入MySQL
+├── scripts/
+│   ├── 01_data_clean.py
+│   ├── 01_database.sql
+│   ├── 02_data_import.py
+│   └── 03_advanced_analysis.sql
 │
-├── sql/ # SQL分析代码
-│ └── 01_behavior_analysis.sql
+├── sql/
+│   └── 01_behavior_analysis.sql
 │
-├── .gitignore # Git忽略文件
+├── .gitignore
 │
-└── README.md # 项目说明文档
+└── README.md
 # 8. SQL分析内容
 
 SQL文件：
