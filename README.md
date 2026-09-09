@@ -103,14 +103,14 @@
 ## 用户行为转化率
 
 
-![Excel转化漏斗](images/funnel.png.png)
+![Excel转化漏斗](images/funnel.png)
 
 
 
 ## Top购买用户分析
 
 
-![Excel用户排行](images/top_user.png.png)
+![Excel用户排行](images/top_user.png)
 
 
 ---
@@ -148,15 +148,6 @@
 ## 分析结果
 
 得到购买次数最高的 Top10 用户。
-
-
----
-
-## 可视化结果
-
-![高频购买用户分析](images/top_user.png)
-
-
 ---
 
 ## 分析结论
@@ -186,27 +177,32 @@
 # 7. 项目结构
 实习项目
 │
-├── images
-│   ├── taobao.png
-│   ├── funnel.png
-│   ├── top_user.png
-│  
-├── powerBI
-│   └── 淘宝用户.pbix
+├── data/ # 原始数据及分析结果
+│ ├── UserBehavior.csv # 淘宝用户行为原始数据
+│ ├── behavior_funnel.csv # 用户行为漏斗分析结果
+│ └── top_buy_users.csv # 高购买用户分析结果
 │
-├── scripts
-│   ├── 01_data_clean.py
-│   ├── 02_data_import.py
+├── output/ # 数据清洗后的文件
+│ └── user_behavior_cleaned.csv
 │
-├── sql
-│   └── 01_behavior_analysis.sql
+├── images/ # 项目展示图片
+│ ├── taobao.png # Power BI 用户行为看板
+│ ├── funnel.png # 用户行为漏斗图
+│ ├── top_user.png # Top购买用户分析图
 │
-├── data
-│   └── behavior_funnel.csv
-│   └── top_buy_users.csv
-│   └── UserBehavior.csv
+├── powerBI/
+│ └── 淘宝用户.pbix # Power BI分析文件
 │
-└── README.md
+├── scripts/ # 数据处理脚本
+│ ├── 01_data_clean.py # 数据清洗
+│ ├── 02_data_import.py # 数据导入MySQL
+│
+├── sql/ # SQL分析代码
+│ └── 01_behavior_analysis.sql
+│
+├── .gitignore # Git忽略文件
+│
+└── README.md # 项目说明文档
 # 8. SQL分析内容
 
 SQL文件：
