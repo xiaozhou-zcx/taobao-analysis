@@ -1,6 +1,6 @@
 import pandas as pd
 
-# 读取数据,只读取前20w行,因为数据太多了
+# 读取数据,只读取前60w行,因为数据太多了
 df = pd.read_csv('../data/UserBehavior.csv', header=None, nrows=600000)
 
 # 添加列名
