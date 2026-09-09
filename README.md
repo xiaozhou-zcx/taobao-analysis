@@ -1,6 +1,6 @@
 # 淘宝用户行为数据分析项目
 
-## 1. 项目介绍
+### 1. 项目介绍
 
 本项目基于淘宝用户行为公开数据集，通过 Python 完成数据清洗与预处理，并使用 MySQL 对用户浏览、收藏、加购、购买等行为进行分析。
 
@@ -13,7 +13,7 @@
 
 ---
 
-## 2. 项目背景
+### 2. 项目背景
 
 在电商平台中，用户通常会经历：
 
@@ -183,37 +183,38 @@ kaggle 淘宝用户行为公开数据集
 
 ---
 
-# 7. 项目结构
-实习项目/
+## 7. 项目结构
+
+```text
+taobao-analysis/
 │
-├── data/
-│   ├── UserBehavior.csv
-│   ├── behavior_funnel.csv
-│   └── top_buy_users.csv
+├── data/                         # 原始数据及分析结果
+│   ├── UserBehavior.csv          # 淘宝用户行为原始数据
+│   ├── behavior_funnel.csv       # 用户行为漏斗分析结果
+│   └── top_buy_users.csv         # 高频购买用户分析结果
 │
-├── output/
+├── output/                       # 数据清洗后的文件
 │   └── user_behavior_cleaned.csv
 │
-├── images/
-│   ├── taobao.png
-│   ├── funnel.png
-│   └── top_user.png
+├── images/                       # 项目展示图片
+│   ├── taobao.png                # Power BI 用户行为分析看板
+│   ├── funnel.png                # 用户行为漏斗分析图
+│   └── top_user.png              # 高频购买用户分析图
 │
-├── powerBI/
+├── powerBI/                      # Power BI 可视化文件
 │   └── 淘宝用户.pbix
 │
-├── scripts/
-│   ├── 01_data_clean.py
-│   ├── 01_database.sql
-│   ├── 02_data_import.py
-│   └── 03_advanced_analysis.sql
+├── scripts/                      # 数据处理脚本
+│   ├── 01_data_clean.py          # 数据清洗
+│   └── 02_data_import.py         # 数据导入 MySQL
 │
-├── sql/
+├── sql/                          # SQL分析代码
 │   └── 01_behavior_analysis.sql
 │
 ├── .gitignore
 │
-└── README.md
+└── README.md                     # 项目说明文档
+```
 # 8. SQL分析内容
 
 SQL文件：
